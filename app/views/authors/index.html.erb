@@ -1,0 +1,9 @@
+<h1>Authors</h1>
+<ul>
+    <% for author in @authors %>
+        <li><%= author.name%>, Born on <%= author.date_of_birth%>, <%= author.book[0].title %></li>
+    <% end %>
+</ul>
+<%= link_to  "Create a new author", new_author_path %>
+
+	

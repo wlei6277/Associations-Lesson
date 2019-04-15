@@ -1,0 +1,11 @@
+<%= form_for @author, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    <div>
+        <%= f.label :name, "Author name" %>
+        <%= f.text_field :name %> 
+    </div>
+    <div>
+        <%= f.label :date_of_birth, "Date of birth" %>
+        <%= f.date_field :date_of_birth %> 
+    </div>
+    <%= f.button :submit,  class: 'btn btn-primary' %>
+<% end %>
